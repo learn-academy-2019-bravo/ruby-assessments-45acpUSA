@@ -59,6 +59,17 @@ end
 no_vowels = "I have no vowels"
 # expected output = " hv n vwls"
 
+def devowel(str)
+  str.split("")
+  .select { |el|
+    if el !~ /[aeiou]/i
+      el
+    end
+  }
+  .join(" ")
+end
+
+# p devowel(no_vowels)
 
 #### 5. Look at this horrible ruby code, and fix it to be good ruby code.
 
