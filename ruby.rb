@@ -5,8 +5,24 @@
 tempArray = [1, 2, 6, 9, 3, 21]
 
 # your ruby loop here
-tempArray.map { |el| el * 2}
+#If you would like you'd like your output as an array, I would use the .map method.
+p tempArray.map { |el| el * 2 }
 
+#.each is a good way to print your output as individual values
+tempArray.each { |el| p el * 2 }
+
+#a simple loop with a conditional is a simple way to loop over the array and apply basic logic
+i = -1
+loop do
+  i += 1
+  if i < tempArray.length
+    p tempArray[i] * 2
+  else
+    break
+  end
+end
+
+#using a while loop is a more concise way of looping through the array
 i = -1
 while i < tempArray.length
   i += 1
@@ -15,10 +31,18 @@ end
 
 
 
+
 #### 2. From all the built in Ruby methods we've seen in class this week, choose three that you think are particularly helpful and create examples to show how they work.
 
 # your three built in ruby methods
+.to_i
+This comes in handy when taking in numerical user input (by ways like "gets" or "params" in Rails) and using it to compare to another number or float.
 
+.sort_by
+This built in method is extremely useful when sorting various data types by specific parameters.
+
+.chomp
+A funny and useful built-in that "chomps" the "/n" off of user input which is a byproduct of pressing the Return key.
 
 #### 3. Create a method that takes in a sentence and returns a new sentence with the first letter of each word capitalized.
 
