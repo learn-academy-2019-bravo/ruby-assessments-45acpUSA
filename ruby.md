@@ -15,11 +15,12 @@ The last difference I will cover in (slight) detail is the way logic is returned
 #### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance.
 
 
-[Your Answer]
+//Your Answer
+Class inheritance in Ruby is very similar to inheritance in JavaScript. When a developer says that class B inherits from class A, this simply means that class B inherently contains all the information and logic that class A has. For example, class B would contain all the methods that class A has as well as any class variables in the initialize method. If class A requires arguments for its initialize method, these would need to also be specified in both the initialize declaration as well as the super of class B, and in the same order. Class B could branch of as far as specificity and include its own characteristics (in the initialize method) and methods, which would also be inherited by and class that is programmed to extend off of class B.
 
-
-[Googled Answer]
-
+//Googled Answer
+Google corroborates my answer in a more concise presentation:
+"Inheritance is when a class inherits behavior from another class. The class that is inheriting behavior is called the subclass and the class it inherits from is called the superclass. We use inheritance as a way to extract common behaviors from classes that share that behavior, and move it to a superclass."
 
 #### 3. What is rspec and what is the general process for writing tests in RSpec?
 
