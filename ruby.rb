@@ -74,7 +74,7 @@ end
 #### 5. Look at this horrible ruby code, and fix it to be good ruby code.
 
 class Example
-  def initialize day
+  def initialize(day)
     @day = day.capitalize
   end
   def say_hi
@@ -94,5 +94,27 @@ end
 #### 6a.  Create a class called Animal that initializes with a color.  Create a method in the class called legs that returns 4.
 
 # your class here
+class Animal
+  def initialize
+    @color = "red"
+  end
+  def legs
+    4
+  end
+end
+
+# p Animal.new.legs
 
 #### 6b.  Create a new instance of an Animal with a brown color.  Return how many legs the animal has.
+
+class Animal
+  def initialize(color)
+    @color = color
+  end
+  def legs
+    4
+  end
+end
+
+brown_animal = Animal.new("brown")
+p brown_animal.legs
