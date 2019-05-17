@@ -4,9 +4,15 @@ Try your best to answer each question on your own before looking up the answer o
 
 
 #### 1. What is a method in Ruby? How is it different or similar to functions in JavaScript?
+A method draws many parallels to functions in JavaScript. For the most part, both Ruby methods and JavaScript functions operate the same way: both have the option of taking in arguments, both have a declaration and body, and to call (access) either, the process is very similar.
 
+The main difference between the two is syntax. The first difference is declaration. Functions declared in the global scope are typically declared with the keyword const before the function name. In Ruby, regardless of the scope the keyword used to declare a method is def.
 
-#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance. 
+Another huge syntax difference between these languages is the "lack" of syntax in Ruby. What I mean by that is that in Ruby, symbols like curly braces and parentheses are not as common. This leads a lot of developers to claim that Ruby is a good "beginner" coding language to learn. In its essence, I believe that this is a valid statement, although learning JavaScript prior expedited the learning process (and probably allowed for ease over some of the logical hurdles). To end this tangential thought, I believe that Ruby is an easier language to learn because the syntax is more closely related to colloquial English, but not an easy language overall. Getting back to the topic of the lack of syntax in Ruby, with regards to methods, generally the blocks within the method are opened in a variety of ways but always closed by the keyword end.
+
+The last difference I will cover in (slight) detail is the way logic is returned from the block of a method/function. In JavaScript, it is common practice to use the keyword return in order to correctly output your response. One of the many beautiful features of Ruby is that the methods have a built-in implicit return which simply means that you do not need a keyword in order to return your logic from the block. Not only is this a great time-saver as far as writing the code, but also makes debugging the code a lot easier.
+
+#### 2. What does it mean that a class inherits from another class? Try to explain Ruby inheritance.
 
 
 [Your Answer]
@@ -22,7 +28,7 @@ Try your best to answer each question on your own before looking up the answer o
 //Googled Answer
 
 
-#### 4. Name three possible non-inheritance relationships between ruby objects? 
+#### 4. Name three possible non-inheritance relationships between ruby objects?
 
 //Your Answer
 
