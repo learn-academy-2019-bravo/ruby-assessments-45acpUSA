@@ -5,13 +5,13 @@
 tempArray = [1, 2, 6, 9, 3, 21]
 
 # your ruby loop here
-#If you would like you'd like your output as an array, I would use the .map method.
+#If you would like you'd like your output as a new array, I would use the .map method.
 p tempArray.map { |el| el * 2 }
 
-#.each is a good way to print your output as individual values
+# .each is a good way to print your output as individual values
 tempArray.each { |el| p el * 2 }
 
-#a simple loop with a conditional is a simple way to loop over the array and apply basic logic
+#A simple loop with a conditional is a simple way to loop over the array and apply basic logic
 i = -1
 loop do
   i += 1
@@ -22,12 +22,12 @@ loop do
   end
 end
 
-#using a while loop is a more concise way of looping through the array
-# i = -1
-# while i < tempArray.length
-#   i += 1
-#   p tempArray[i] * 2
-# end
+#Using a while loop is a more concise way of looping through the array
+i = -1
+while i < tempArray.length
+  i += 1
+  p tempArray[i] * 2
+end
 
 
 
@@ -35,19 +35,19 @@ end
 #### 2. From all the built in Ruby methods we've seen in class this week, choose three that you think are particularly helpful and create examples to show how they work.
 
 # your three built in ruby methods
-# .to_i
-# This comes in handy when taking in numerical user input (by ways like "gets" or "params" in Rails) and using it to compare to another number or float.
-#
-# .sort_by
-# This built in method is extremely useful when sorting various data types by specific parameters.
-#
-# .chomp
-# A funny and useful built-in that "chomps" the "/n" off of user input which is a byproduct of pressing the Return key.
+.to_i
+This comes in handy when taking in numerical user input (by ways like "gets" or "params" in Rails) and using it to compare to another number or float.
+
+.sort_by
+This built in method is extremely useful when sorting various data types by specific parameters.
+
+.chomp
+A funny and useful built-in that "chomps" the "/n" off of user input which is a byproduct of pressing the Return key.
 
 #### 3. Create a method that takes in a sentence and returns a new sentence with the first letter of each word capitalized.
 
 sentence = "hello there, how are you?"
-# expected output = "Hello There, How Are You?"
+expected output = "Hello There, How Are You?"
 
 def capitalizer(str)
   str.split(" ").map { |el| el.capitalize  }.join(" ")
@@ -57,7 +57,7 @@ end
 #### 4.  Create a method that takes in a string and returns a new string with all the vowels removed. HINT:  there's a built in string method for this
 
 no_vowels = "I have no vowels"
-# expected output = " hv n vwls"
+expected output = " hv n vwls"
 
 def leppard(str)
   str.split("")
