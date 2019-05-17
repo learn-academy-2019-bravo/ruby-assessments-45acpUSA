@@ -5,7 +5,15 @@
 tempArray = [1, 2, 6, 9, 3, 21]
 
 # your ruby loop here
- 
+tempArray.map { |el| el * 2}
+
+i = -1
+while i < tempArray.length
+  i += 1
+  p tempArray[i] * 2
+end
+
+
 
 #### 2. From all the built in Ruby methods we've seen in class this week, choose three that you think are particularly helpful and create examples to show how they work.
 
@@ -25,24 +33,24 @@ expected output = " hv n vwls"
 
 #### 5. Look at this horrible ruby code, and fix it to be good ruby code.
 
-``` ruby
-class example
-  def initialize(day)
-    @day=day
-  end
-
-  def Say_hi
-    if(day == "Friday"){
-      puts "TGIF!"
-    }
-    elseif(day == "Monday"){
-      puts "Its monday again"
-    }
-    else
-      puts "another day"
-  end
-end
-```
+# ``` ruby
+# class example
+#   def initialize(day)
+#     @day=day
+#   end
+#
+#   def Say_hi
+#     if(day == "Friday"){
+#       puts "TGIF!"
+#     }
+#     elseif(day == "Monday"){
+#       puts "Its monday again"
+#     }
+#     else
+#       puts "another day"
+#   end
+# end
+# ```
 #### 6a.  Create a class called Animal that initializes with a color.  Create a method in the class called legs that returns 4.
 
 # your class here
