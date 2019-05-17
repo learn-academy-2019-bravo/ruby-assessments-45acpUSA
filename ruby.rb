@@ -59,7 +59,7 @@ end
 no_vowels = "I have no vowels"
 # expected output = " hv n vwls"
 
-def devowel(str)
+def leppard(str)
   str.split("")
   .select { |el|
     if el !~ /[aeiou]/i
@@ -69,28 +69,28 @@ def devowel(str)
   .join(" ")
 end
 
-# p devowel(no_vowels)
+# p leppard(no_vowels)
 
 #### 5. Look at this horrible ruby code, and fix it to be good ruby code.
 
-# ``` ruby
-# class example
-#   def initialize(day)
-#     @day=day
-#   end
-#
-#   def Say_hi
-#     if(day == "Friday"){
-#       puts "TGIF!"
-#     }
-#     elseif(day == "Monday"){
-#       puts "Its monday again"
-#     }
-#     else
-#       puts "another day"
-#   end
-# end
-# ```
+class Example
+  def initialize day
+    @day = day.capitalize
+  end
+  def say_hi
+    if @day == "Friday"
+      p "It's #{@day}, you don't got no job, you ain't got s!@$ to do!"
+    elsif @day == "Monday"
+      p "It's #{@day} again."
+    else
+      p "Just another day (in paradise)."
+    end
+  end
+end
+
+# balls = Example.new("friday")
+# balls.say_hi
+
 #### 6a.  Create a class called Animal that initializes with a color.  Create a method in the class called legs that returns 4.
 
 # your class here
