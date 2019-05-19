@@ -40,10 +40,14 @@ But anyways, according to Google:
 #### 4. Name three possible non-inheritance relationships between ruby objects?
 
 //Your Answer
+I cannot give a definite answer mainly because I am having a hard time understanding the question. Perhaps this was covered in lecture and I missed it (sorry!), but here's my attempt:
 
+One possible non-inheritance relationship between Ruby objects are built-in methods. Since Ruby is an object-oriented language, you are able to call built-in methods on anything, even numbers and floats! For example, if I used .to_i on the string "7" and printed it (e.g. p "7".to_i), it would print 7 (as an integer). Another example would be if I used the .class method on 7 and printed it (e.g. p 7.class). This would print "Fixnum" (because I am asking for the class of that data type).
+
+I am unable to think of any other possible relationships along this same trend. I have an inkling that this question is aimed at the initialize, getter and setter methods but I will let Google confirm.
 
 //Googled Answer
-
+After spending a substantial amount of time perusing Google and the lecture notes, I have not found any answers that satisfy this specific question. I am still inclined to believe that the expected answer is along the lines of the initialize, getter, setter and attr_accessor instance method, but I am getting mixed responses through my searches. Perhaps the fact that you can create an instance off each class through Class_Name.New is relational between objects?
 
 #### 5. What do we call the #{} convention used below? What is it accomplishing?
 
@@ -52,11 +56,12 @@ x = 1022
 puts "I am printing a random number #{x}"
 ```
 
-String Interpolation! This allows you to call different assigned data types (most often variables) within the same string as plain text without having to continually open and close strings and concatenate them with "+" each time. This not only saves time but improves the readability of code. I know that with JavaScript, it was the ES6 update (in 2015) that made it possible on that language, but I am unsure whether that is what prompted Ruby to do the same (or could Ruby have had it prior?).
+String Interpolation! This allows you to call different assigned data types (most often variables) within the same string as plain text without having to continually open and close strings and concatenate them with "+" each time. This not only saves time but improves the readability of code. I know that with JavaScript, it was the ES6 update (in 2015) that made it possible on that language, but I am unsure whether that is what prompted Ruby to do the same or it Ruby had it prior.
 
 #### 6. How do you feel about testing right now? What potential pros/cons/barriers/advantages do you see to implementing BDD in your own code?
 
 //Your Answer
+
 
 //Googled Answer
 
