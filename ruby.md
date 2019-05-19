@@ -41,6 +41,7 @@ But anyways, according to Google:
 
 //Your Answer
 
+
 //Googled Answer
 
 
@@ -50,6 +51,8 @@ But anyways, according to Google:
 x = 1022
 puts "I am printing a random number #{x}"
 ```
+
+String Interpolation! This allows you to call different assigned data types (most often variables) within the same string as plain text without having to continually open and close strings and concatenate them with "+" each time. This not only saves time but improves the readability of code. I know that with JavaScript, it was the ES6 update (in 2015) that made it possible on that language, but I am unsure whether that is what prompted Ruby to do the same (or could Ruby have had it prior?).
 
 #### 6. How do you feel about testing right now? What potential pros/cons/barriers/advantages do you see to implementing BDD in your own code?
 
