@@ -16,18 +16,26 @@ The last difference I will cover in (slight) detail is the way logic is returned
 
 
 //Your Answer
-Class inheritance in Ruby is very similar to inheritance in JavaScript. When a developer says that class B inherits from class A, this simply means that class B inherently contains all the information and logic that class A has. For example, class B would contain all the methods that class A has as well as any class variables in the initialize method. If class A requires arguments for its initialize method, these would need to also be specified in both the initialize declaration as well as the super of class B, and in the same order. Class B could branch of as far as specificity and include its own characteristics (in the initialize method) and methods, which would also be inherited by and class that is programmed to extend off of class B.
+Class inheritance in Ruby is very similar to inheritance in JavaScript. When a developer says that class B inherits from class A, this simply means that class B inherently contains all the information and logic that class A has. For example, class B would contain all the methods that class A has as well as any class variables in the initialize method. If class A requires arguments for its initialize method, these would need to also be specified in both the initialize declaration as well as the super of class B, and in the same order. Class B could branch off and include its own characteristics (class variables in the initialize method) and methods, which would also be inherited by and class that is programmed to extend off of class B.
 
 //Googled Answer
-Google corroborates my answer in a more concise presentation:
+Google corroborates my answer in a more concise manner:
 "Inheritance is when a class inherits behavior from another class. The class that is inheriting behavior is called the subclass and the class it inherits from is called the superclass. We use inheritance as a way to extract common behaviors from classes that share that behavior, and move it to a superclass."
 
 #### 3. What is rspec and what is the general process for writing tests in RSpec?
 
 //Your Answer
+RSpec is a Behavior Driven Development (BDD) testing suite that is used to test Ruby code. The BDD process is extremely useful when showing non-developers (C-level management, investors and/or clients) that you're not only testing your code to see if it works, but it is written in a way that is easier for a non-developer to understand. In other words, it's closer to colloquial English than TDD (Test Driven Development) processes.
+
+The general process for writing a test in RSpec would contain three main lines: The first begins with the keyword describe, followed by the name of the method or class being tested and concluded with the keyword do (similar process to Jest for JavaScript). The next line would be indented and initiate with the keyword it followed by a description of what this class or method does, and again, concludes with the keyword do. The last line or group of lines, again indented, contains the expected output and/or any variable reassignments to make calling or naming easier. There would need to be two end keywords to end the "it" block and the "describe" block.
+
+It is possible for one "describe" block to contain multiple "it" blocks which each have their respective "expect" lines. This was apparent during our testing exercises with classes.
 
 //Googled Answer
+I forgot the important detail that RSpec is a unit test. I believe that I was inaccurate in my wording about RSpec being a "testing suite", although I was unable to find any information regarding that on Google. I did find that RSpec is a "testing framework". I did some research on the difference between a test suite and testing framework to no fruition. If you have any information regarding this specific topic, I'd love to learn more!
 
+But anyways, according to Google:
+"RSpec is a unit test framework for the Ruby programming language. RSpec is different than traditional xUnit frameworks like JUnit because RSpec is a Behavior driven development tool. What this means is that, tests written in RSpec focus on the "behavior" of an application being tested. RSpec does not put emphasis on, how the application works but instead on how it behaves, in other words, what the application actually does. This tutorial will show you, how to use RSpec to test your code when building applications with Ruby."
 
 #### 4. Name three possible non-inheritance relationships between ruby objects?
 
