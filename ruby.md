@@ -61,10 +61,14 @@ String Interpolation! This allows you to call different assigned data types (mos
 #### 6. How do you feel about testing right now? What potential pros/cons/barriers/advantages do you see to implementing BDD in your own code?
 
 //Your Answer
+I don't feel bad, nor do I feel great about testing. What I've heard from the Alpha 19 Cohort is that testing is very important in most of their internship positions and I feel like we breezed through both Jest and RSpec. With that being said, it is still hard to know whether we have a strong enough grasp and enough practice with testing because I don't know what the industry expects from us as far as knowledge and experience (essentially, I don't know the metric). I personally prefer to know more than I would need to and put in a little more practice before the internships and capstone projects, but there is also a lot more to learn in the curriculum. I wouldn't mind extra practice on the side in order to solidify my knowledge and gain more experience.
 
+As I stated in my response to Question 3, I believe that BDD is extremely important for non-developers. BDD is easier for a non-developer to understand because it simply explains how it works without getting into too much of the technical details. This also makes, in my opinion, writing BDD tests (contrasted with TDD tests) a lot easier because of the "broad stroke" approach.
+
+When comparing BDD to TDD, I'm not entirely sure of the barriers or cons of using BDD or when it would be more appropriate to use TDD. I remember that Jest is a TDD testing framework and we used it specifically to test functions and nothing else (in the scope of our curriculum). On the other hand, RSpec is a BDD testing framework used for classes. I believe that when very specific parameters are tested, TDD should be used and BDD when you're testing the general functionality. While I believe both Jest and RSpec are unit tests, I think TDD may be used to test functions and methods, while BDD may be used for classes. (TDD uses the red, green, refactor methodology while BDD does not).
 
 //Googled Answer
-
+According to Google, TDD focuses on the "inside-out" perspective, meaning the tests are created from the developer's perspective. In other words, tests are created with specific inputs and outputs in mind. On the other hand, BDD focuses on the "outside-in" perspective. That means we test behaviors which are related to business outcomes. The process is very similar to TDD, and BDD is largely an extension of the TDD methodology. The big difference is that BDD requires guidance from developers, testers and users to ensure answers to the "why's" behind a user story.
 
 #### 7. What is an instance variable in Ruby? How is it different from a normal, local variable?
 
