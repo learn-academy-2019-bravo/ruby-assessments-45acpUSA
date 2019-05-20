@@ -126,3 +126,13 @@ end
 
 brown_animal = Animal.new("brown")
 p brown_animal.legs
+
+#if purpose of exercise was to create a child class from original Animal class
+class Brown_Animal < Animal
+  def initialize
+    @color= "brown"
+  end
+end
+
+new_animal = Brown_Animal.new
+p new_animal.legs
