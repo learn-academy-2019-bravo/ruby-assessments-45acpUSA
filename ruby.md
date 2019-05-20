@@ -73,8 +73,15 @@ According to Google, TDD focuses on the "inside-out" perspective, meaning the te
 #### 7. What is an instance variable in Ruby? How is it different from a normal, local variable?
 
 //Your Answer
+An instance variable, or class variable, is a variable in the initialize method of a class. The syntax is slightly different, using an "@" sign before the variable name (e.g. @variable_name). In the initialize method, these instance variables can be assigned to either a hard-coded value or take in a value as an argument. In the latter situation, you would need to include the arguments in both the initialize and super lines in each of the children classes.
+
+Instance variables differ from local variables because they have the ability to be called and reassigned in different methods within the class. You even have the ability to call upon these instance variables by using a getter method, attr_reader or attr_accessor. This would occur using dot notation after creating an instance of the class. Local variables do not have this ability. Local variables are stuck within the method block where they are first assigned or confined as an argument in the initialize method. If they occur as an initialize argument, they need to be assigned to a corresponding instance variable in order to be called. If they are assigned within a method block that isn't the initialize method, they are simply helper variables used to assist in a logical operation, which most of the time ends in the reassignment of an instance variable.
 
 //Googled Answer
+According to Google:
+"An instance variable has a name beginning with @, and its scope is confined to whatever object self refers to. Two different objects, even if they belong to the same class, are allowed to have different values for their instance variables. From outside the object, instance variables cannot be altered or even observed (i.e., ruby's instance variables are never public) except by whatever methods are explicitly provided by the programmer. As with globals, instance variables have the nil value until they are initialized.
+
+Instance variables of ruby do not need declaration. This implies a flexible structure of objects. In fact, each instance variable is dynamically appended to an object when it is first referenced."
 
 #### 8. Ruby has a great community and tons of free resources to help you learn. Here is the long list of great resources: https://www.ruby-lang.org/en/documentation/. Below are a few popular ones:
 - Interactive Ruby tutorial (http://tryruby.org/levels/1/challenges/0)
