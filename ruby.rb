@@ -59,6 +59,7 @@ end
 no_vowels = "I have no vowels"
 expected output = " hv n vwls"
 
+#Method NOT using built-in
 def leppard(str)
   str.split("")
   .select { |el|
@@ -67,6 +68,13 @@ def leppard(str)
     end
   }
   .join(" ")
+end
+
+# p leppard(no_vowels)
+
+#Method USING built-in
+def leppard(str)
+  str.gsub(/[aeiou]/i, "")
 end
 
 # p leppard(no_vowels)

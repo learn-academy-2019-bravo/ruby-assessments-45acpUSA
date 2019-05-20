@@ -90,3 +90,9 @@ Instance variables of ruby do not need declaration. This implies a flexible stru
 
 
 Choose one of these resources and go through the material (not for hours, only looking for around 10min of your time) then come back here and list a few new things you learned about Ruby.
+
+https://www.techotopia.com/index.php/Ruby_Essentials
+After stumbling upon this link from the ruby-lang.org link, I did some research into the Advanced Ruby Arrays section and hit a gold mine! While already having a strong appreciation for Ruby, the fact that you can perform operations like intersection, union and difference between two arrays took my appreciation to a whole new level. The dynamic built-ins have really streamlined Ruby's functionality. Returning to the new array comparison operators I learned, intersection creates a new array from the two existing arrays containing only elements that occur in both original arrays, while removing duplicates. Union concatenates the two original arrays, while removing duplicates. Finally, difference returns a new array that is a copy of the first array, while removing any items that are also in the second array.
+
+https://www.shortcutfoo.com/app/dojos/ruby-strings/cheatsheet
+This was another resource I stumbled upon while looking up the built-in string method for Exercise 4 in the Ruby.rb file. Not only did I find the pertinent built-in method to remove the vowels from the string, I also found a variety of string comparison operators and methods as well as search/replace methods. I find it extremely useful using these built-in string methods as it allows you to perform fairly complicated logic on a string without having to first convert it into an array. This not only saves time as a developer but allows for better readability and ease of organization.
